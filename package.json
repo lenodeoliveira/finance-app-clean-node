@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --passWithNoTests --coverage --no-cache",
-    "test:staged": "jest --silent --noStackTrace --runInBand  --no-cache"
+    "test:staged": "npm test --coverage && coveralls < coverage/lcov.info"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
+    "coveralls": "^3.1.1",
     "eslint": "^7.32.0",
     "eslint-config-standard-with-typescript": "^21.0.1",
     "eslint-plugin-import": "^2.25.4",
