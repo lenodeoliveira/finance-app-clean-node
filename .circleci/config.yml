@@ -10,7 +10,7 @@ jobs:
       - checkout
       - run:
           name: install the dependencies
-          command: npm install && 
+          command: npm install
       - run:
           name: tests and generates coverage report
           command: npm run test:staged
