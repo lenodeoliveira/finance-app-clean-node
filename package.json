@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:staged": "jest --coverage"
+    "test": "jest --passWithNoTests --coverage --no-cache",
+    "test:staged": "jest --silent --noStackTrace --runInBand  --no-cache"
   },
   "repository": {
     "type": "git",
