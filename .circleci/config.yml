@@ -9,6 +9,9 @@ jobs:
     steps:
       - checkout
       - run:
-          name: install and make tests
-          command: npm install && npm run test:staged
+          name: install the dependencies
+          command: npm install && 
+      - run:
+          name: tests and generates coverage report
+          command: npm run test:staged
       - coveralls/upload
